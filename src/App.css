@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(5, 5, 5);
 }
 
 .App-link {
@@ -35,4 +35,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.social-container {
+  background: #eee;
+  padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #ffffff;
+}
+
+a.facebook {
+  color: #e4e4e4;
+}
+
+a.twitter {
+  color: #ffffff;
+}
+
+a.instagram {
+  color: rgb(255, 255, 255);
 }
