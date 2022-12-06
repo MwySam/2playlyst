@@ -7,7 +7,7 @@ import {faYoutube,faFacebook,faTwitter,faInstagram} from "@fortawesome/free-bran
 const Footer = () => {
 return (
 <div class="social-container">
-      <h3> Follow Us Here </h3>
+      <h3 style={{color: '#888888'}}>Follow Us Here </h3>
     <a href="https://www.facebook.com"
         className="facebook social">
         <FontAwesomeIcon icon={faFacebook} size="2x" />

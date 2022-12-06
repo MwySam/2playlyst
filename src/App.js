@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 const theme = createTheme({
       typography:{
-        fontFamily: ['Montserrat']
+        fontFamily: ['Montserrat'],
       }
     });
 

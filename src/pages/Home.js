@@ -2,16 +2,6 @@ import React from 'react'
 import {Card, Container, createTheme, Grid, ThemeProvider,Typography} from '@material-ui/core';
 import NavBar from '../components/NavBar';
 import CustomBtn from '../components/CustomBtn'
-/*import CustomCard from './components/CustomCard';*/
-
-/*
-    const theme = createTheme({
-      typography:{
-        fontFamily: ['Montserrat']
-      }
-    });
-
-*/
 
 class Home extends React.Component {
   constructor(){
@@ -34,11 +24,12 @@ render(){
 
       <NavBar/>
     <div>
+    
     <Container maxWidth= 'sm' style={{ marginTop: '120px'}}  >
-      <Typography variant='h4' align='center' color='white' gutterBottom>
+      <Typography variant='h4' align='center' style={{color: '#c0c0c0'}} gutterBottom>
         Transfer your tracks and playlists!
       </Typography>
-      <Typography variant='h6' align='center' color='textSecondary' paragraph>
+      <Typography variant='h6' align='center' style={{color: '#808080'}} paragraph>
         Transfer your music playlists simply and quickly from Spotify to SoundCloud.
         Without a hassle!
       </Typography>
