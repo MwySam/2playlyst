@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card, Container, createTheme, Grid, ThemeProvider,Typography} from '@material-ui/core';
+import {Container,Typography} from '@material-ui/core';
 import NavBar from '../components/NavBar';
 import CustomBtn from '../components/CustomBtn'
 
@@ -30,11 +30,12 @@ render(){
         Transfer your tracks and playlists!
       </Typography>
       <Typography variant='h6' align='center' style={{color: '#808080'}} paragraph>
-        Transfer your music playlists simply and quickly from Spotify to SoundCloud.
+        Transfer your music playlists simply and quickly from Spotify to Youtube.
         Without a hassle!
       </Typography>
    
-      <CustomBtn onClick= {this.showForm}txt="Let's Go!">
+      <CustomBtn 
+      onClick={() => { this.showForm();}} txt="Let's Go!">
 
       </CustomBtn>
 

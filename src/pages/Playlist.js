@@ -79,7 +79,7 @@ class Playlist extends React.Component {
         margin-top: 100px;`)
     }
 
-     transferToApple = () => {
+     transferToYoutube = () => {
         this.setState({
             loading: true,
         })
@@ -93,7 +93,7 @@ render(){
         <NavBar/>
        
         <div className=" button-wrapper" style={{ marginTop: '150px'}}>
-            <CustomBtn onClick={this.transferToApple}  txt="Transfer Selected Playlists To SoundCloud">
+            <CustomBtn onClick={this.transferToYoutube}  txt="Transfer Selected Playlists To Youtube">
             </CustomBtn>
             </div>
 

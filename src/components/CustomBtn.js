@@ -30,10 +30,10 @@ const StyledButton = withStyles(
 })(Button);
 
 
-function CustomBtn(props) {
+const CustomBtn = (props) => {
   return(
     <Grid container justify= "center">
-    <StyledButton size ="large" variant="contained">{props.txt}</StyledButton>
+    <StyledButton size ="large" variant="contained" onClick={props.onClick}>{props.txt}</StyledButton>
   </Grid>
   )
 }
