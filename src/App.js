@@ -2,9 +2,10 @@ import React from 'react'
 import Home from './pages/Home';
 import Playlist from './pages/Playlist';
 import Results from './pages/Results'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { createTheme , ThemeProvider} from '@material-ui/core';
 import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 const theme = createTheme({
       typography:{
@@ -18,13 +19,13 @@ class App extends React.Component {
     return (
       <main>
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
+        <Router>
           <Routes>
             <Route path="/" element={<Home/>} />
             <Route path="/playlist/*" element={<Playlist/>} />
             <Route path="results/*" element={<Results/>} />
           </Routes>
-        </BrowserRouter>
+        </Router>
       </ThemeProvider>
       <Footer/>
       </main>)

@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import './styles.css';
 
-export const PlaylistCard = props => {
+const PlaylistCard = props => {
     return (
         <div id={props.uid} className="music">
             <div id={props.uid} className={`music-content ${props.isSelected ? 'active' : ''}`} onClick={props.handleCheckboxChange}>
